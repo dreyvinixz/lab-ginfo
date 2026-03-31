@@ -8,7 +8,7 @@ export type PC = {
   user?: string;
 };
 
-export const pcs: PC[] = [
+export const initialPCs: PC[] = [
   { id: "PC-01", x: 600, y: 200, status: "livre" },
   { id: "PC-02", x: 880, y: 40, status: "ocupado", user: "Andrey" },
   { id: "PC-03", x: 880, y: 100, status: "livre" },
