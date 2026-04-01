@@ -139,7 +139,7 @@ export default function Lab2D({
           x="55"
           y="78"
           width="1175"
-          height="662"
+          height="722"
           rx="12"
           fill="none"
           stroke="#273142"
@@ -207,9 +207,19 @@ export default function Lab2D({
           strokeWidth="2"
         />
         <rect
-          x="520"
+          x="710"
+          y="615"
+          width="250"
+          height="62"
+          fill="#e8dc97"
+          fillOpacity="0.78"
+          stroke="#938d6c"
+          strokeWidth="2"
+        />
+        <rect
+          x="970"
           y="535"
-          width="320"
+          width="250"
           height="68"
           fill="#e8dc97"
           fillOpacity="0.78"
@@ -217,19 +227,20 @@ export default function Lab2D({
           strokeWidth="2"
         />
         <rect
-          x="875"
-          y="535"
-          width="340"
-          height="68"
+          x="970"
+          y="615"
+          width="250"
+          height="62"
           fill="#e8dc97"
           fillOpacity="0.78"
           stroke="#938d6c"
           strokeWidth="2"
         />
+
         <rect
-          x="875"
-          y="635"
-          width="340"
+          x="970"
+          y="720"
+          width="250"
           height="62"
           fill="#e8dc97"
           fillOpacity="0.78"
