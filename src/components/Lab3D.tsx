@@ -539,7 +539,7 @@ function SceneContent({
     <>
       <color attach="background" args={["#1a1a2e"]} />
 
-      <ambientLight intensity={0.8} />
+      <ambientLight intensity={2.0} />
 
       <directionalLight
         position={[8, 12, 6]}
