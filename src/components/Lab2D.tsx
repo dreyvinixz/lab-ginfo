@@ -128,7 +128,7 @@ export default function Lab2D({
           x="640"
           y="34"
           textAnchor="middle"
-          fontSize="26"
+          fontSize="32"
           fontWeight="700"
           fill="#0f172a"
         >
@@ -161,7 +161,7 @@ export default function Lab2D({
             style={{ cursor: "pointer" }}
           />
           <rect
-            x="95"
+            x="85"
             y="245"
             width="105"
             height="68"
@@ -176,7 +176,7 @@ export default function Lab2D({
             x="147"
             y="235"
             textAnchor="middle"
-            fontSize="13"
+            fontSize="16"
             fill="#374151"
             fontWeight="600"
             onClick={handleMeetingClick}
@@ -249,27 +249,27 @@ export default function Lab2D({
 
         <g transform="translate(65, 730)">
           <rect width="285" height="90" rx="6" fill="#ebe9dc" stroke="#9ca3af" />
-          <text x="12" y="18" fontSize="13" fontWeight="600" fill="#111827">
+          <text x="12" y="18" fontSize="16" fontWeight="600" fill="#111827">
             Legenda
           </text>
 
           <rect x="15" y="29" width="18" height="18" fill="#e8dc97" stroke="#6b5e3d" />
-          <text x="40" y="41" fontSize="12" fill="#111827">
+          <text x="40" y="41" fontSize="14" fill="#111827">
             Mesa
           </text>
 
           <rect x="155" y="29" width="18" height="18" fill="#22c55e" stroke="#1f2937" />
-          <text x="180" y="41" fontSize="12" fill="#111827">
+          <text x="180" y="41" fontSize="14" fill="#111827">
             PC Livre
           </text>
 
           <rect x="155" y="51" width="18" height="18" fill="#ef4444" stroke="#1f2937" />
-          <text x="180" y="63" fontSize="12" fill="#111827">
+          <text x="180" y="63" fontSize="14" fill="#111827">
             PC Ocupado
           </text>
 
           <rect x="15" y="51" width="18" height="18" fill="#6b7280" stroke="#1f2937" />
-          <text x="40" y="63" fontSize="12" fill="#111827">
+          <text x="40" y="63" fontSize="14" fill="#111827">
             PC Offline
           </text>
         </g>
@@ -277,7 +277,7 @@ export default function Lab2D({
 
       {tooltip && (
         <div
-          className="pointer-events-none absolute z-20 rounded-md bg-black/90 px-3 py-2 text-xs text-white shadow-lg"
+          className="pointer-events-none absolute z-20 rounded-md bg-black/90 px-3 py-2 text-xs sm:text-sm text-white shadow-lg"
           style={{ left: tooltip.x, top: tooltip.y }}
         >
           <div className="font-semibold">{tooltip.pc.id}</div>

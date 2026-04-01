@@ -42,7 +42,7 @@ function getStatusColor(status: PC["status"]) {
 export default function SidePanel({ selected }: { selected: SelectedItem }) {
   if (!selected) {
     return (
-      <div className="h-full w-80 overflow-auto bg-gray-900 p-6 text-white">
+      <div className="h-full w-full overflow-auto bg-gray-900 p-6 text-white">
         <p className="text-gray-400">Selecione um PC ou a mesa de reunião.</p>
       </div>
     );
@@ -52,7 +52,7 @@ export default function SidePanel({ selected }: { selected: SelectedItem }) {
     const meeting = selected.data;
 
     return (
-      <div className="h-full w-80 overflow-auto bg-gray-900 p-6 text-white">
+      <div className="h-full w-full overflow-auto bg-gray-900 p-6 text-white">
         <h2 className="mb-6 text-xl font-bold text-amber-400">📅 REUNIÃO AGENDADA</h2>
 
         <div className="space-y-4 text-sm">
@@ -79,7 +79,7 @@ export default function SidePanel({ selected }: { selected: SelectedItem }) {
   const pc = selected.data;
 
   return (
-    <div className="h-full w-80 overflow-auto bg-gray-900 p-6 text-white">
+    <div className="h-full w-full overflow-auto bg-gray-900 p-6 text-white">
       <h2 className="mb-6 text-xl font-bold">{pc.id}</h2>
 
       <div className="space-y-4 text-sm">

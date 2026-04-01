@@ -51,6 +51,7 @@
 }
 
 #root {
+  padding-top: 32px;
   width: 1226px;
   max-width: 100%;
   margin: 0 auto;
