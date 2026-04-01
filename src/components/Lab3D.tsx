@@ -12,13 +12,13 @@ import type { SelectedItem } from "./SidePanel";
 /* ───────────────── Helpers ───────────────── */
 function getColor(status: string) {
   if (status === "livre") return "#22c55e";
-  if (status === "ocupado") return "#ef4444";
+  if (status === "Em uso") return "#ef4444";
   return "#64748b";
 }
 
 function getEmissive(status: string) {
   if (status === "livre") return "#064d1e";
-  if (status === "ocupado") return "#7f1d1d";
+  if (status === "Em uso") return "#7f1d1d";
   return "#1e293b";
 }
 
@@ -279,7 +279,7 @@ function Monitor({
     if (!glowRef.current) return;
 
     const t = clock.getElapsedTime();
-    if (pc.status === "ocupado") {
+    if (pc.status === "Em uso") {
       glowRef.current.intensity = 1.2 + Math.sin(t * 1.5) * 0.2;
     } else {
       glowRef.current.intensity = pc.status === "offline" ? 0 : 0.8;

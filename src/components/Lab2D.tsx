@@ -7,7 +7,7 @@ function getPCColor(status: string): string {
   switch (status) {
     case "livre":
       return "#22c55e";
-    case "ocupado":
+    case "Em uso":
       return "#ef4444";
     case "offline":
       return "#6b7280";
@@ -265,7 +265,7 @@ export default function Lab2D({
 
           <rect x="155" y="51" width="18" height="18" fill="#ef4444" stroke="#1f2937" />
           <text x="180" y="63" fontSize="14" fill="#111827">
-            PC Ocupado
+            PC em Uso
           </text>
 
           <rect x="15" y="51" width="18" height="18" fill="#6b7280" stroke="#1f2937" />

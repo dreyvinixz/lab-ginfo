@@ -17,8 +17,8 @@ function getStatusLabel(status: PC["status"]) {
   switch (status) {
     case "livre":
       return "Livre";
-    case "ocupado":
-      return "Ocupado";
+    case "Em uso":
+      return "Em uso";
     case "offline":
       return "Offline";
     default:
@@ -30,7 +30,7 @@ function getStatusColor(status: PC["status"]) {
   switch (status) {
     case "livre":
       return "text-green-400";
-    case "ocupado":
+    case "Em uso":
       return "text-red-400";
     case "offline":
       return "text-gray-400";
